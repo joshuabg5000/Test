@@ -2,5 +2,7 @@ language: c
 compiler:
   - gcc
   - clang
+jdk:
+  - openjdk6
 # Change this to your needs
 script: sudo bash test.sh
