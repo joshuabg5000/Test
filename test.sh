@@ -21,5 +21,5 @@ source ~/.bashrc
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
 
 echo "finished. You can now add your favorite Repo. Have fun"
-repo init -u git://github.com/PAC-man/pacman.git -b pac-4.4
+yes "" | repo init -u git://github.com/PAC-man/pacman.git -b pac-4.4
 repo sync
