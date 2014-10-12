@@ -1,8 +1,6 @@
 #!/bin/bash
 
 echo "Preparing"
-
-
 sudo apt-get install -y gcc -qq ccache
 sudo apt-get install -y -qq git gnupg flex bison gperf build-essential \
   zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
@@ -22,7 +20,6 @@ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/rep
 echo "export USE_CCACHE=1" >> .bashrc
 source ~/.bashrc
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
-
 echo "finished. You can now add your favorite Repo. Have fun"
 yes "" | repo init -q -u git://github.com/PAC-man/pacman.git -b pac-4.4
 echo "Syncing"
