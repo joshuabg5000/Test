@@ -1,7 +1,4 @@
-language: c
-compiler:
-  - gcc
-  - clang
+language: java
 jdk:
   - openjdk6
 # Change this to your needs
