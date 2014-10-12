@@ -27,5 +27,5 @@ java -version
 yes "" | repo init -q -u git://github.com/PAC-man/pacman.git -b pac-4.4
 echo syncing
 repo sync -q
-ls
+ls -a
 ./build-pac.sh -f wx_na_wf
