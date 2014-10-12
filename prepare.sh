@@ -19,7 +19,6 @@ java -version
 mkdir ~/bin
 PATH=~/bin:$PATH
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
-
 echo "export USE_CCACHE=1" >> .bashrc
 source ~/.bashrc
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
