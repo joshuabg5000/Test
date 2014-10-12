@@ -4,3 +4,4 @@ yes | sudo apt-get install bison build-essential bzip2 curl dpkg-dev flex g++-mu
 sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
 mkdir ~/bin && curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
 echo test
+ls
