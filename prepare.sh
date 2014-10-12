@@ -25,9 +25,6 @@ source ~/.bashrc
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
 
 echo "finished. You can now add your favorite Repo. Have fun"
-jdk_switcher use openjdk6
-javac -version
-java -version
 yes "" | repo init -q -u git://github.com/PAC-man/pacman.git -b pac-4.4
 echo "Syncing"
 repo sync -q
