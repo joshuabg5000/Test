@@ -24,3 +24,5 @@ echo "finished. You can now add your favorite Repo. Have fun"
 yes "" | repo init -q -u git://github.com/PAC-man/pacman.git -b pac-4.4
 echo syncing
 repo sync -q
+ls
+./build-pac.sh -f wx_na_wf
