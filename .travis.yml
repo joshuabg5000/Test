@@ -1,5 +1,7 @@
 language: java
+before_script:
+  - ./prepare.sh
 jdk:
   - openjdk6
 # Change this to your needs
-script: sudo bash test.sh
+script: sudo bash build.sh
