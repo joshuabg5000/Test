@@ -4,7 +4,11 @@ echo "this is for Ubuntu 12.04"
 
 
 sudo apt-get install -y gcc -qq ccache
-sudo apt-get install -y -qq git-core gnupg flex bison gperf build-essential zip curl libc6-dev x11proto-core-dev libreadline6-dev:i386 libgl1-mesa-glx:i386 g++-multilib mingw32 openjdk-6-jdk tofrodos python-markdown libxml2-utils schedtool pngcrush xsltproc zlib1g-dev:i386 python-software-properties
+sudo apt-get install -y -qq git gnupg flex bison gperf build-essential \
+  zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
+  libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
+  libgl1-mesa-dev g++-multilib mingw32 tofrodos \
+  python-markdown libxml2-utils xsltproc zlib1g-dev:i386
 sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
 sudo apt-get purge openjdk-\* icedtea-\* icedtea6-\*
 sudo add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main"
