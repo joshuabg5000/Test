@@ -23,4 +23,4 @@ prebuilts/misc/linux-x86/ccache/ccache -M 50G
 echo "finished. You can now add your favorite Repo. Have fun"
 yes "" | repo init -u git://github.com/PAC-man/pacman.git -b pac-4.4
 echo syncing
-repo sync --no-pager
+repo sync -q
