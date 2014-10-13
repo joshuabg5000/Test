@@ -11,4 +11,3 @@ java -version
 ls -a
 ls -a prebuilts/misc/linux-x86/bison
 ls -a prebuilts/misc
-ls -a prebuilts
