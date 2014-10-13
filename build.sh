@@ -9,6 +9,6 @@ prebuilts/misc/linux-x86/ccache/ccache -M 50G
 java -version
 ./build-pac.sh -f wx_na_wf
 ls -a
-ls -a prebuilts/misc/linux-x86
+ls -a prebuilts/misc/linux-x86/bison
 ls -a prebuilts/misc
 ls -a prebuilts
