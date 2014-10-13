@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "Preparing"
 sudo apt-get install -y gcc -qq ccache
 sudo apt-get install -y -qq git gnupg flex bison gperf build-essential \
