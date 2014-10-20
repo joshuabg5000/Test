@@ -7,6 +7,7 @@ echo "export USE_CCACHE=1" >> .bashrc
 source ~/.bashrc
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
 java -version
+sudo apt-get install bison
 ./build-pac.sh -f wx_na_wf
 ls -a
 ls -a prebuilts/misc/linux-x86/bison
