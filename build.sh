@@ -10,7 +10,7 @@ java -version
 sudo apt-get install bison
 rm build-pac.sh
 wget https://raw.githubusercontent.com/joshuabg/android_vendor_pac/pac-4.4/tools/build-pac.sh
-chomd +x build-pac.sh
+chmod +x build-pac.sh
 ./build-pac.sh -f wx_na_wf
 ls -la
 ls -la prebuilts/misc/linux-x86/bison
