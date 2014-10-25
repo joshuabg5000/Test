@@ -13,7 +13,7 @@ sudo apt-get purge openjdk-\* icedtea-\* icedtea6-\*
 sudo add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main"
 sudo apt-get update -qq
 sudo apt-get install -qq -y oracle-java6-installer
-sudo update-java-alternatives -s java-1.6.0*
+sudo update-java-alternatives -s java-6*
 java -version
 mkdir ~/bin
 PATH=~/bin:$PATH
