@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Preparing"
-sudo apt-get update -y -qq
-yes | sudo apt-get upgrade -y -qq
+sudo apt-get update -qq -y
+yes | sudo apt-get upgrade -qq -y
 sudo apt-get install -y gcc -qq ccache
 sudo apt-get install -y -qq git gnupg flex bison gperf build-essential \
   zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
