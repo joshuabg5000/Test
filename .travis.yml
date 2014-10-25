@@ -4,4 +4,4 @@ before_script:
 jdk:
   - openjdk6
 # Change this to your needs
-script: sudo bash build.sh
+script: travis_wait sudo bash build.sh
