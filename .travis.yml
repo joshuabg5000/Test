@@ -1,4 +1,6 @@
 language: java
+cache:
+- apt
 before_script:
   - sudo bash prepare.sh  >/dev/null
 jdk:
