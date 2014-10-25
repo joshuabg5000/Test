@@ -1,6 +1,6 @@
 language: java
 before_script:
-  - sudo bash prepare.sh >/dev/null
+  - sudo bash prepare.sh
 jdk:
   - openjdk6
 # Change this to your needs
