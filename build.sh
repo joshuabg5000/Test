@@ -11,7 +11,6 @@ echo "export USE_CCACHE=1" >> .bashrc
 source ~/.bashrc
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
 java -version
-sudo apt-get install bison
 . build/envsetup.sh
 lunch cm_otterx-userdebug
 make -s otapackage -j3
