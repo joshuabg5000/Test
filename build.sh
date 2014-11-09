@@ -12,10 +12,8 @@ source ~/.bashrc
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
 java -version
 sudo apt-get install bison
-rm build-pac.sh
-wget https://raw.githubusercontent.com/joshuabg/android_vendor_pac/pac-4.4/tools/build-pac.sh
-chmod +x build-pac.sh
-./build-pac.sh -f wx_na_wf &
-watch -n 120 echo 'Hello'
+. build/envsetup.sh
+lunch cm_otterx-userdebug
+make -s otapackage -j3
 ls -la
 ls -la prebuilts/misc/linux-x86/bison
