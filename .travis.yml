@@ -7,6 +7,6 @@ cache:
 before_script:
   - sudo bash prepare.sh  >/dev/null
 jdk:
-  - openjdk6
+  - openjdk7
 # Change this to your needs
 script: sudo bash build.sh
