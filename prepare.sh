@@ -9,11 +9,6 @@ sudo apt-get install -y -qq git gnupg flex bison gperf build-essential \
   libgl1-mesa-dev g++-multilib mingw32 tofrodos \
   python-markdown libxml2-utils xsltproc zlib1g-dev:i386
 sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
-sudo apt-get purge openjdk-\* icedtea-\* icedtea6-\*
-sudo add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main"
-sudo apt-get update -qq
-sudo apt-get install -qq -y oracle-java6-installer
-sudo update-java-alternatives -s java-6*
 java -version
 mkdir ~/bin
 PATH=~/bin:$PATH
@@ -21,7 +16,7 @@ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/rep
 echo "export USE_CCACHE=1" >> .bashrc
 source ~/.bashrc
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
-echo "finished. You can now add your favorite Repo. Have fun"
-yes "" | repo init -q -u git://github.com/PAC-man/pacman.git -b pac-4.4
+echo "Adding cm12 repo"
+yes "" | repo init -q -u git://github.com/CyanogenMod/android.git -b cm-12.0
 echo "Syncing"
 repo sync -q
