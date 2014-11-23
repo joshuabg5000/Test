@@ -20,6 +20,6 @@ cd ..
 repo sync -j32
 . build/envsetup.sh
 lunch cm_otterx-userdebug
-make -s otapackage -j3
+make -s recoveryimage -j3
 ls -la
 ls -la prebuilts/misc/linux-x86/bison
