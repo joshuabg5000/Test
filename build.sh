@@ -10,6 +10,7 @@ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/rep
 echo "export USE_CCACHE=1" >> .bashrc
 source ~/.bashrc
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
+sudo apt-get install -y openjdk-7-jdk
 java -version
 mkdir -p .repo/local_manifests
 cd .repo/local_manifests
