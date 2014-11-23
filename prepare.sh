@@ -16,6 +16,6 @@ echo "export USE_CCACHE=1" >> .bashrc
 source ~/.bashrc
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
 echo "Adding cm12 repo"
-yes "" | repo init -q -u git://github.com/CyanogenMod/android.git -b cm-12.0
+yes "" | repo init -q -u git://github.com/omnirom/android.git -b android-5.0
 echo "Syncing"
 repo sync -q
