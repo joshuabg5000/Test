@@ -11,8 +11,13 @@ echo "export USE_CCACHE=1" >> .bashrc
 source ~/.bashrc
 prebuilts/misc/linux-x86/ccache/ccache -M 50G
 java -version
+mkdir -p .repo/local_manifests
+cd .repo/local_manifests
+wget https://raw.githubusercontent.com/joshuabg5000/Test/master/roomservice.xml
+cd ..
+cd ..
+repo sync -j32
 . build/envsetup.sh
-export ROOMSERVICE_BRANCHES=cm-11.0
 lunch cm_otterx-userdebug
 make -s otapackage -j3
 ls -la
